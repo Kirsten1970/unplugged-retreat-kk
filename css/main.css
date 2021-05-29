@@ -338,6 +338,11 @@ input[type=button] {
   align-items: center;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /*---- Reviews ---*/
 
 .reviews {
@@ -685,6 +690,10 @@ footer .copyright {
     align-items: flex-start;
   }
 
+  .map figure {
+     padding-bottom: 45.5%; 
+    }
+
   /*-----FAQ PAGE -----*/
 
   .faq .content-wrapper {
@@ -791,6 +800,11 @@ header {
 
  .contact-content h4 {
    font-size: 1.875em;
+ }
+
+ .map figure {
+   padding-top: 37.5%;
+
  }
 
 /* ==========================================================================
