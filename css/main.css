@@ -13,6 +13,7 @@
 
 html {
   color: #222;
+  font-size: 1em;
   line-height: 1.4;
 }
 
@@ -101,13 +102,13 @@ body {
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3em;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.2em;
 }
 
 h3, 
@@ -227,6 +228,22 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons p {
+  background-color: #527158;
+  margin: 0px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+footer .social-icons p i {
+  font-size: 1.4em;
+}
+
 footer {
   flex-direction: column;
   text-align: center;
@@ -265,7 +282,8 @@ aside {
 }
 
 aside .form {
-  margin-top: 30px;
+  margin-top: 20px;
+  padding-left: 10px;
 }
 
 input[type=text] {
@@ -353,8 +371,17 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   line-height: 1;
+}
+
+figure {
+  margin-bottom: 30px;  
+}
+
+.reviews p {
+  width: 50%;
+  margin: 0px;
 }
 
 .reviews h3 {
@@ -389,16 +416,16 @@ img {
 }
 
 .map figure {
-  width: 100%;
-  height: 0; 
+  width: 100%; 
   padding-bottom: 125%; 
   overflow: hidden;
   position: relative;
+  margin: 0px;
+  padding: 0px 0 0;
 }
 
 .map iframe {
   width: 100%;
-  height: 100%;
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -417,7 +444,7 @@ img {
 .faq .content-wrapper {
   margin: 50px 0 0 0;
   display: flex;
-  justify-content: column;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -429,11 +456,12 @@ img {
 
 .faq-content {
   margin-bottom: 50px;
+  font-size: 1.5em;
 }
 
 .faq-content h4 {
-  line-height: 1.333;
-
+  line-height: 1.333em;
+  font-size: 2.5em;
 }
 
 /* ==========================================================================
@@ -594,7 +622,7 @@ aside .content-wrapper {
    
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {        
-    width: 45%;         
+    width: 35%;         
     margin: 0;
 }
    
@@ -626,14 +654,25 @@ aside .content-wrapper .form {
   width: 85%;
 }
 
-.reviews article figure,
+.reviews p {
+  width: 100%;
+}
+
+.reviews article figure {
+  width: 49%;
+
+}
 .reviews article div {
-  width: 50%;
+  width: 49%;
 }
 
 .reviews h3 {
   width: 75%;
   margin: 0;
+}
+
+.reviews h2 {
+  margin-top: 20px;
 }
    
       /* Footer */
@@ -691,8 +730,9 @@ footer .copyright {
   }
 
   .map figure {
-     padding-bottom: 45.5%; 
-    }
+     padding-bottom: 39%;
+  } 
+    
 
   /*-----FAQ PAGE -----*/
 
@@ -706,7 +746,7 @@ footer .copyright {
   
   .faq-content p {
     flex-flow: column wrap;
-    width: 45%;
+    width: 100%;
   }
 
   .faq h2 {
@@ -724,8 +764,6 @@ footer .copyright {
 
 header {
    padding: 15px 0;
-   justify-content: center;
-   width: 960px;
 }
 
  .content-wrapper {
@@ -775,14 +813,27 @@ header {
      flex-basis: 33%; 
  }
 
- /* Reviews */ 
- .reviews article div {
-     width: 100%; 
- }
+ /* Reviews */
 
- footer {
-   width: 100%;
- }
+.reviews h2 {
+   padding-bottom: 50px;
+   margin-top: 0px;
+}
+
+.reviews article div {
+  width: 49%;
+}
+
+.reviews p {
+  width: 100%;
+}
+.reviews article figure {
+    width: 49%; 
+}
+
+footer h4 {
+   font-size: 1.875em;
+}
 
 /* ==========================================================================
 About Page
@@ -803,7 +854,8 @@ header {
  }
 
  .map figure {
-   padding-top: 37.5%;
+   padding-top: 23%;
+   padding-bottom: 0px;
 
  }
 
@@ -813,6 +865,11 @@ FAQ Page
  .faq h2 {
      width: 100%;
      font-size: 3em;
+ }
+
+ .faq-content p {
+   width: 100%;
+
  }
 
 }
