@@ -270,6 +270,20 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+header nav {
+  display: flex;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+nav a{
+  padding: 20px;
+}
+
 
 /*---- Aside ----*/
 
@@ -797,11 +811,13 @@ header {
 
  aside .content-wrapper .form-description,
  aside .content-wrapper .form {
-     width: 30%;
+     width: 40%;
+     padding-right: 80px;
  }
 
  .form-description p {
    font-size: 1.125em;
+   padding-right: 50px;
  }
 
  /* Features */
